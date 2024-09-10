@@ -1,0 +1,9 @@
+root = "."
+
+[build]
+  bin = "./tmp/main"
+  cmd = "templ generate && bunx tailwindcss -i ./components/input.css -o ./assets/output.css && go build -o ./tmp/main ."
+  delay = 1000
+  exclude_dir = ["assets", "tmp", "vendor", "testdata"]
+  include_ext = ["go", "templ"]
+  log = "build-errors.log"

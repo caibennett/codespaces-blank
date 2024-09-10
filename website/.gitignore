@@ -1,0 +1,5 @@
+components/*.css
+*_templ.go
+node_modules
+tmp
+website
